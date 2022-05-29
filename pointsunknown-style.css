@@ -46,12 +46,14 @@ a.highlight{
     color:black;
     font-weight:bold;
     font-family: "Roboto Mono",monospace;
+    text-decoration:none;
 }
 
 a.highlight:hover{
     background-color:#FAF8D7;
     color:black;
     font-weight:bold;
+    text-decoration:none;
 }
 
 h1 {
@@ -66,11 +68,7 @@ h2{
 }
 
 
-hr {
-    border-top: .5px;
-    margin-top: 2em;
-    margin-bottom: 2em;
-}
+
 .text-container {
     max-width: 640px;
     margin: 0 auto;
@@ -88,10 +86,3 @@ img {
     margin-right: 20px;
 }
 
-.footer {
-    font-family:"Roboto Mono", monospace;
-    padding:30px;
-    height:10vh;
-    background-color:#000;
-    margin:0 auto;
-}
