@@ -23,6 +23,16 @@
 </head>
 
 <style>
+        a {
+            color:black;
+            text-decoration:underline;
+        }
+
+        a:hover{
+            color: #87898A;
+            text-decoration: underline;
+
+        }
         .hero {
           font-family: "Inter", sans-serif;
           font-weight:400;
@@ -44,7 +54,6 @@
         }
         .hero .subtitle{
           font-family:'Inter', sans-serif;
-
           color: #FAF8D7;
           font-size:1em;
           letter-spacing: .05em;
@@ -60,6 +69,17 @@
           background-color:#FAF8D7;
           font-size:1em;
           text-decoration: underline;
+        }
+        .footer {
+          font-family:"Roboto Mono",monospace;
+          background-color:white;
+          padding-bottom:10em;
+        }
+        hr {
+          border-top: .5px;
+          stroke:black;
+          margin-top: 2em;
+          margin-bottom: 2em;
         }
 </style>
 <body>
@@ -81,7 +101,7 @@
         <div class="container" id="about">
                 <div class="columns is-centered is-multiline content">
                 <!-- About Image -->
-                  <div class = "column is-one-fifth mr-4" style="border: 1px solid black;" >
+                  <div class = "column is-one-fifth mr-4" style="border: 1px solid black" >
                     <div class="card-image">
                       <img src="https://github.com/srjouppi/points-unknown-coursework/blob/main/img/shelby-jouppi.jpg?raw=true" alt="Shelby Jouppi wearing a red-orange Carhartt winter hat, smiling on a snow covered mountain in Colorado."/>
                     </div>
@@ -109,7 +129,10 @@
     </div>
   </section>
     <div id="footer" class="footer">
-        <p>This site was built with Bulma & HTML. <a href="https://srjouppi.github.io">Back to Portfolio.</a></p>
+      <hr/>
+        This site was built with Bulma & HTML.
+        <br/>
+        <a href="https://srjouppi.github.io">Back to Portfolio →</a>
     </div>
 </body
 </html>
