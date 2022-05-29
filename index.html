@@ -28,14 +28,17 @@
           font-weight:400;
           letter-spacing: .01em;
           color: #fff;
-          font-size: 1.2em;
+          font-size: 1em;
           background-color:#FABB16;
           padding:0;
         }
         .hero .title {
           font-family: "Inter", sans-serif;
-          color: #000;
+          color: #FAF8D7;
+          background: black;
           font-weight: 600;
+          padding-left:5px;
+          margin-bottom:5px;
           text-transform:uppercase;
           letter-spacing:.05em;
         }
@@ -43,60 +46,68 @@
           font-family:'Inter', sans-serif;
 
           color: #FAF8D7;
-          font-size:1.2em;
+          font-size:1em;
           letter-spacing: .05em;
         }
         .hero a{
-          font-weight:bold;
-          color:#FAF8D7;
-          background-color:#000;
+          color:black;
+          text-decoration:underline;
+          font-size:1em;
           margin:5px;
           padding:2px;
         }
         .hero a:hover{
           background-color:#FAF8D7;
-          color:#000;
+          font-size:1em;
+          text-decoration: underline;
         }
 </style>
 <body>
     <section class="hero">
         <div class="hero-body">
             <div class= "column is-one-fifth">
-                <h1 class="title">POINTS UNKNOWN</h1>
+                <h1 class="title">POINTS</h1>
+                <h1 class="title">UNKNOWN</h1>
             </div>
         <div class="column is-two-fifths">
-            <p>A site to host assignments and final deliverables for the <a href="https://pointsunknown.nyc" target="_blank" rel="noopener noreferrer">Points Unknown</a> class at Columbia University's Graduate School of Journalism.</p>
+            <p>A site to host assignments and final deliverables for the Summer 2022 <a href="https://pointsunknown.nyc" target="_blank" rel="noopener noreferrer">Points Unknown</a>class at Columbia University's Graduate School of Journalism.</p>
         </div>
     </div>
     </section>
 
+    <!-- About Section -->
     <section class="section">
         <div class="container" id="about">
                 <div class="columns is-centered is-multiline content">
-                <!-- Image -->
-                  <div class = "column is-one-third">
+                <!-- About Image -->
+                  <div class = "column is-one-fifth mr-4" style="border: 1px solid black;" >
                     <div class="card-image">
-                      <img src="https://raw.githubusercontent.com/srjouppi/points-unknown-coursework/main/img/shelby-jouppi.png" alt="Shelby Jouppi wearing a red-orange Carhartt winter hat, smiling on a snow covered mountain in Colorado."/>
+                      <img src="https://github.com/srjouppi/points-unknown-coursework/blob/main/img/shelby-jouppi.jpg?raw=true" alt="Shelby Jouppi wearing a red-orange Carhartt winter hat, smiling on a snow covered mountain in Colorado."/>
                     </div>
                   </div>
               
               <!-- About Text-->
                   <div class = "column is-two-fifths">
-                    <h2><a href="/nyc-cost-of-therapy" target="_blank">About the Author</a></h2>
-                    <p>Some psychologists cite low reimbursement rates as a reason they don't enroll with Medicaid. I <a href="https://github.com/srjouppi/therapy-costs-scraper-analysis" target="_blank">scraped Psychology Today's provider directory</a> to determine how much private therapists are charging in New York City.</p>
-                    <p>I visualized the results with a combination of handmade illustrations, ai2html and d3 to create this <a href="https://srjouppi.github.io/nyc-cost-of-therapy" target="_blank">scrollytelling.</a></p>
+                    <h2>About the Author</h2>
+                    <p>I'm Shelby Jouppi, a data journalist finishing up my Master's at Columbia University in New York, NY.
+                        Before this I was a <a class="highlight" href="https://www.shelbyjouppi.work/samples/the-confessional-season-3"target="_blank" rel="noopener noreferrer">freelance podcast producer</a>
+                         and a <a class="highlight" href="https://www.shelbyjouppi.work/" target="_blank" rel="noopener noreferrer">public radio reporter</a> 
+                         at Detroit's NPR station. As a mama to a child with special health needs, I am deeply passionate about
+                         reporting on health care accessibility and filling information gaps for families.</p> 
                 </div>
             </div>
         </div>
     </section>
     
 
-
-    <div id="assignments class="section">
+    <!-- Assignments Section -->
+    <section class="section">
+    <div id="assignments" class="container">
 
     </div>
-    <div id="footer" class="section">
-        <p>This site was built with HTML</p>
+  </section>
+    <div id="footer" class="footer">
+        <p>This site was built with HTML. <a href="https://srjouppi.github.io">Back to Portfolio.</a></p>
     </div>
 </body
 </html>
