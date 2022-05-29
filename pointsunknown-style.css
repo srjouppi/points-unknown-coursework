@@ -99,9 +99,9 @@ img {
 }
 
 .footer {
+    font-family:"Roboto Mono", monospace;
     padding:30px;
     height:10vh;
     background-color:#000;
-    font-family:"Roboto Mono", monospace;
     margin:0 auto;
 }
