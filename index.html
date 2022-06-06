@@ -80,6 +80,17 @@
           margin-top: 2em;
           margin-bottom: 2em;
         }
+        .card {
+          border: 1px solid #000;
+          padding:0;
+        }
+        .card-image{
+          padding:0;
+        }
+        .img{
+          margin: 0 auto;
+          width:100%;
+        }
 </style>
 <body>
     <section class="hero">
@@ -100,9 +111,9 @@
         <div class="container" id="about">
                 <div class="columns is-centered is-multiline content">
                 <!-- About Image -->
-                  <div class = "column is-one-fifth mr-4" style="border: 1px solid black" >
+                  <div class = "column is-one-fifth mr-4" >
                     <div class="card-image">
-                      <img src="https://github.com/srjouppi/points-unknown-coursework/blob/main/img/shelby-jouppi.jpg?raw=true" alt="Shelby Jouppi wearing a red-orange Carhartt winter hat, smiling on a snow covered mountain in Colorado."/>
+                      <img src="https://github.com/srjouppi/points-unknown-coursework/blob/main/img/shelby-jouppi.jpg?raw=true" alt="Shelby Jouppi wearing a red-orange Carhartt winter hat, smiling on a snow covered mountain in Colorado." style="border: 1px solid black"/>
                     </div>
                   </div>
               
@@ -119,13 +130,48 @@
             </div>
         </div>
     </section>
-    
+    <hr/>
 
     <!-- Assignments Section -->
-    <section class="section">
-    <div id="assignments" class="container">
+    <section class="section" id="assignments">
+      <div class="columns is-centered is-multiline content">
 
-    </div>
+        <!-- Assignment #1a: Map Tutorial -->
+        <div class = "column is-one-third">
+          <div class="card">
+            <div class="card-image">
+              <!-- <figure class="image is-4by3"> -->
+                <img src="https://github.com/srjouppi/points-unknown-coursework/blob/main/img/gradcyl-tutorial.png?raw=true" alt="Placeholder image">
+
+              </div>
+            <div class="card-content">        
+              <div class="content">
+                <h3>Voting distribution of the 2020 presidential election</h3>
+                <p>I followed this handy PointsUnknown tutorial to create two interactive maps of the 2020 presidential election.</p>
+                <a href="https://srjouppi.github.io/points-unknown-coursework/election-map">See the maps →</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Assignment #1b: Map Tutorial -->
+        <div class = "column is-one-third">
+          <div class="card">
+            <div class="card-image">
+              <!-- <figure class="image is-4by3"> -->
+                <img src="https://github.com/srjouppi/points-unknown-coursework/blob/main/img/choropleth-policebrutality.png?raw=true" alt="Placeholder Image">
+
+              </div>
+            <div class="card-content">        
+              <div class="content">
+                <h3>Geographical distribution of police brutality at protests.</h3>
+                <p>Using Javascript and Mapbox I created an interactive map of police brutality reports by state, county and type.</p>
+                <a href="https://srjouppi.github.io/points-unknown-coursework/police-brutality">See the maps →</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
   </section>
     <div id="footer" class="footer">
       <hr/>

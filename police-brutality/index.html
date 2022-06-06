@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elections Map 2020</title>
+    <script src='https://api.mapbox.com/mapbox-gl-js/v2.8.2/mapbox-gl.js'></script>
+    <link href='https://api.mapbox.com/mapbox-gl-js/v2.8.2/mapbox-gl.css' rel='stylesheet' />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda&family=Inter:wght@300;400;700;800;&family=Open+Sans:wght@300;400;600&family=Playfair+Display:ital,wght@0,500;0,700;1,500;1,700&family=Roboto+Mono:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Source+Code+Pro:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet"> 
+    <script src="https://kit.fontawesome.com/01d9812a13.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="pointsunknown-style.css">
+</head>
+<body>
+    <div class="menu">
+        <a href="https://srjouppi.github.io/points-unknown-coursework"> <-- Back </a>
+    </div>
+    <div class="text-container">
+        <h1>Interactive maps: Police Brutality Reports</h1>
+        <h2>Using Javascript, D3 and two interactive maps of reports of police brutality against protesters by state, county and type.</h2>
+        <p class="dateline" style="color:grey;">June 3, 2022</p>
+        <h3>Police brutality choropleth</h3>
+        <hr/>
+        <p>This map uses multiple layers of polygons and data to and custom zoom levels to switch between county-level and statewide totals of police brutality reports. The data comes from <a href="https://github.com/2020PB/police-brutality" target="_blank">this GitHub repository</a> of evidence of police brutality during the 2020 protests.
+        </p>
+    </div>
+    <div class="chart-container">
+        <div id='map'></div>
+        <div id='title' class="title">
+            <h1>The Geographical Distribution of Subway<br> Usage Decrease Due to COVID-19</h1>
+            <p>This map documents changes in ridership by subway station between March 6 and March 20th, as measured through turnstile usage. The data is provided by the New York City Metro Transit Authority. To contextualize station locations across the five boroughs, an additional layer (Median Household Income) has been added. This data is block group-level estimates provided by the American Community Survey of the U.S. Census Bureau.</p>
+            <hr>
+            <div id="turnstile-legend" class="legend2">
+                <h4>Drop in Ridership</h4>
+                <p><em>Click on stations for detailed turnstile usage</em></p>
+                <div><span style="background-color: #fef0d3"></span>&#8594;<span style="background-color: #ff4400; height:20px; width:20px"></span> < 50% decrease to > 90% decrease</div>
+            </div>
+        </div>
+    </div>
+    <div class="text-container">
+        <h3><strong>Graduated Point Map</strong></h3>
+        <hr/>
+        <p>This map colors dots based on the candidate that won the county and sizes them by their margin.</p>
+    </div>
+    <div class="chart-container">
+        <div id='gradCyl'></div>
+    </div>
+    <script type='text/javascript' src="map.js"></script>
+</body>
+</html>
